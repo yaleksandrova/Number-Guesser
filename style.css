@@ -1,0 +1,39 @@
+* {
+    border-sizing: border-box;
+    border: chartreuse 1px solid;
+}
+/*-------------Body------------*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+/*-------------Header-----------*/
+header {
+    height: 20%;
+    width: 100%;
+    background-color: #404041;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #dd1972;
+}
+span {
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 300px;
+    color: #ffffff;
+}
+/*---------------left side--------*/
+.left {
+    height: 80%;
+    width: 50%;
+    background-color: #f7f7f7;
+    border-right: #d0d2d3;
+}
