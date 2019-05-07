@@ -37,3 +37,19 @@ h3 {
     background-color: #f7f7f7;
     border-right: #d0d2d3;
 }
+.set-range {
+    font-size: 20px;
+    font-weight: 300;
+    color: #404041;
+}
+#min-range, #max-range{
+    font-size: 10px;
+    color: #404041;
+}
+#update {
+    font: 200px;
+    color: #ffffff;
+    background-color: #6e6e6e;
+    border-radius: 10px;
+    float: right;
+}
