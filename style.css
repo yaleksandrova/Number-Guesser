@@ -1,10 +1,10 @@
 * {
-    border-sizing: border-box;
+    box-sizing: border-box;
     border: chartreuse 1px solid;
+    font-family: 'Open Sans', sans-serif;
 }
 /*-------------Body------------*/
 body {
-    font-family: 'Open Sans', sans-serif;
     height: 100%;
     width: 100%;
 }
@@ -36,4 +36,26 @@ h3 {
     width: 50%;
     background-color: #f7f7f7;
     border-right: #d0d2d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+
+}
+.set-range {
+    font-size: 20px;
+    font-weight: 300;
+    color: #404041;
+}
+#min-range, #max-range{
+    font-size: 15px;
+    font-size: 10px;
+    color: #404041;
+}
+#update {
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #6e6e6e;
+    border-radius: 25px;
+    float: right;
 }
