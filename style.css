@@ -36,26 +36,53 @@ h3 {
     width: 50%;
     background-color: #f7f7f7;
     border-right: #d0d2d3;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-content: space-between;
-
+    align-content: space-between; */
+    /* margin: 10px; */
 }
 .set-range {
     font-size: 20px;
     font-weight: 300;
     color: #404041;
+    margin: 10px;
 }
-#min-range, #max-range{
+.min-range, .max-range{
     font-size: 15px;
     font-size: 10px;
     color: #404041;
 }
-#update {
+.update {
     font-size: 15px;
     color: #ffffff;
     background-color: #6e6e6e;
     border-radius: 25px;
     float: right;
+}
+.challengers {
+    margin: 10px;
+}
+#number {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.challengers h3 {
+    color: #404041;
+}
+.challenger-name {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    width: 75%;
+}
+.challenger-guess {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    width: 25%;
+}
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
 }

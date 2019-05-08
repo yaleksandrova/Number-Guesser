@@ -13,14 +13,47 @@
         <section class="left">
             <form class="set-range">
                 <h5>Set Range</h5>
-                <label id="min-range">Min Range</label>
+                <label class="min-range">Min Range</label>
                 <input type="number">
-                <label id="max-range">Max Range</label>
+                <label class="max-range">Max Range</label>
                 <input type="number">
-                <button id="update">UPDATE</button>
+                <button class="update">UPDATE</button>
             </form>
-            <form class="challengers">
-                <p>The Current Range is 1 to 100</p>
+            <section class="challengers">
+                <p>The Current Range is <span id="number">1</span> to <span id="number">100</span></p>
+                <form class="challenger1">
+                    <h3>Challenger 1</h3>
+                    <div class="form-wrapper">
+                        <div class="challenger-name">
+                            <label class="name">Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="challenger-guess">
+                            <label class="guess">Guess</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </form>
+                <form class="challenger2">
+                    <h3>Challenger 2</h3>
+                    <div class="form-wrapper">
+                        <div class="challenger-name">
+                            <label class="name">Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="challenger-guess">
+                            <label class="guess">Guess</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </form>
+                <article>
+                    <button id="submit-guess">SUBMIT GUESS</button>
+                    <button id="reset-game">RESET GAME</button>
+                    <button id="clear-game">CLEAR GAME</button>
+                </article>
+            </section>
+            <!-- <form class="challengers">
                 <h5>Challenger 1</h5>
                 <label class="name">Name</label>
                 <input type="text">
@@ -34,7 +67,7 @@
                 <button id="submit-guess">SUBMIT GUESS</button>
                 <button id="reset-game">RESET GAME</button>
                 <button id="clear-game">CLEAR GAME</button>
-            </form>
+            </form> -->
             <article class="latest-score">
                 <h5>Latest Score</h5>
                 <h6>Challenger 1 Name</h6>
