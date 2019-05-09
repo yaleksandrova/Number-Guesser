@@ -11,8 +11,11 @@ body {
 }
 
 .main {
-    /*display: inline-block;*/
-    flex-direction: row;
+    height: 900px;
+    width: 100%;
+    display: inline;
+   /* display: flex;
+    flex-direction: row;*/
 }
 /*-------------Header-----------*/
 header {
@@ -28,6 +31,7 @@ h1 {
     color: #dd1972;
     margin: 0 auto;
 }
+
 span {
     font-weight: 300;
 }
@@ -45,12 +49,14 @@ h3 {
     background-color: #f7f7f7;
     border-right: 3px #d0d2d3 solid;
 }
+
 h5 {
     font-size: 20px;
     font-weight: 700;
     color: #404041;
     margin: 8px 0 1px 11px;
 }
+
 .box1 {
     height: 15%;
     width: 94%;
@@ -61,6 +67,7 @@ h5 {
     background-color: #ffffff;
     border: 2px #d0d2d4 solid;
 }
+
 .set-range {
     height: 60%;
     width: 97%;
@@ -68,8 +75,8 @@ h5 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
 }
+
 .min-range, .max-range{
     width: 33%;
     display: flex;
@@ -77,11 +84,13 @@ h5 {
     font-size: 20px;
     color: #404041;
 }
+
 .input-small {
     height: 40px;
     width: 200px;
     border: 1px #d0d2d4 solid;
 }
+
 .update {
     height: 40px;
     width: 20%;
@@ -95,6 +104,7 @@ h5 {
     align-items: center; 
     margin-top: 25px;  
 }
+
 .challengers {
     height: 44%;
     width: 94%;
@@ -102,12 +112,14 @@ h5 {
     background-color: #ffffff;
     border: 2px #d0d2d4 solid;
 }
+
 h6 {
     font-size: 20px;
     font-weight: 300;
     margin: 11px;
 }
-#number {
+
+.small-num, .large-num {
     text-decoration: underline;
     font-weight: bold;
 }
@@ -128,6 +140,7 @@ h6 {
     font-size: 20px;
     color: #404041;
 }
+
 .input-large {
     height: 40px;
     width: 390px;
@@ -143,7 +156,7 @@ h6 {
 
 .button {
     height: 40px;
-    width: 30%;
+    width: 33%;
     font-size: 15px;
     font-weight: 700;
     color: #ffffff;
@@ -152,8 +165,9 @@ h6 {
 }
 
 .reset-game, .clear-game {
-    width: 25%;
+    width: 28%;
 }
+
 .latest-score {
     height: 26%;
     width: 94%;
@@ -170,7 +184,6 @@ h6 {
     width: 94%;
     vertical-align: center;
     align-items: center;
-
 }
 
 .current-guess1, .current-guess2 {
@@ -189,13 +202,11 @@ h6 {
 .player1-name {
     text-align: center;
     margin: 0 0 5px 0;
-
 }
 
 .player2-name {
     text-align: center;
     margin: 37px 0 5px 0;
-
 }
 
 p {

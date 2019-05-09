@@ -15,23 +15,23 @@
                 <article class="box1">
                     <h5>Set Range</h5>
                     <form class="set-range">
-                        <label class="min-range">Min Range<input class="input-small" type="number"></label>
-                        <label class="max-range">Max Range<input class="input-small" type="number"></label>
+                        <label class="min-range">Min Range<input class="input-small small-num" type="number"></label>
+                        <label class="max-range">Max Range<input class="input-small large-num" type="number"></label>
                         <button class="update">UPDATE</button>
                     </form>
                 </article> 
 
             <section class="challengers">
-                <h6>The Current Range is <span id="number">1</span> to <span id="number">100</span></h6>
+                <h6>The Current Range is <span class="small-num">1</span> to <span class="large-num">100</span></h6>
                 <h5>Challenger 1</h5>
                 <form class="challenger1">
-                    <label class="name">Name<input class="input-large"type="text"></label>
-                    <label class="guess">Guess<input class="input-small"type="text"></label>
+                    <label class="name">Name<input class="input-large player1-name"type="text"></label>
+                    <label class="guess">Guess<input class="input-small player1-guess"type="text"></label>
                 </form>                
                 <h5>Challenger 2</h5>
                 <form class="challenger2">
-                    <label class="name">Name<input class="input-large" type="text"></label>
-                    <label class="guess">Guess<input class="input-small" type="text"></label>
+                    <label class="player2-name name">Name<input class="input-large" type="text"></label>
+                    <label class="guess">Guess<input class="input-small player2-guess" type="text"></label>
                 </form>
                 <article class="buttons">
                     <button class="submit-guess button">SUBMIT GUESS</button>
@@ -46,7 +46,7 @@
                         <h5>Latest Score</h5>
                         <h6 class="player1-name">Challenger 1 Name</h6>
                         <p>current guess</p>
-                        <h1>97</h1>
+                        <h1 class="player1-guess">97</h1>
                         <p>that's too high</p>
                     </div>
                 </div> 
@@ -54,7 +54,7 @@
                     <div class="current-guess2">
                         <h6 class="player2-name">Challenger 2 Name</h6>
                         <p>current guess</p>
-                        <h1>3</h1>
+                        <h1 class="player2-guess">3</h1>
                         <p>that's too low</p>
                     </div> 
                 </div>   
