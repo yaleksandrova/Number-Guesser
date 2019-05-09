@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: chartreuse 1px solid;
+    /*border: chartreuse 1px solid;*/
     font-family: 'Open Sans', sans-serif;
 }
 /*-------------Body------------*/
@@ -8,6 +8,11 @@ body {
     height: 1000px;
     width: 100%;
     color: #404041;
+}
+
+.main {
+    /*display: inline-block;*/
+    flex-direction: row;
 }
 /*-------------Header-----------*/
 header {
@@ -36,6 +41,7 @@ h3 {
 .left {
     height: 900px;
     width: 50%;
+    margin: 0;
     background-color: #f7f7f7;
     border-right: 3px #d0d2d3 solid;
 }
@@ -53,7 +59,7 @@ h5 {
     font-weight: 300;
     color: #404041;
     background-color: #ffffff;
-    border: 3px #d0d2d4 solid;
+    border: 2px #d0d2d4 solid;
 }
 .set-range {
     height: 60%;
@@ -94,7 +100,7 @@ h5 {
     width: 94%;
     margin: auto;
     background-color: #ffffff;
-    border: 3px #d0d2d4 solid;
+    border: 2px #d0d2d4 solid;
 }
 h6 {
     font-size: 20px;
@@ -144,18 +150,65 @@ h6 {
     background-color: #6e6e6e;
     border-radius: 25px;
 }
- 
+
+.reset-game, .clear-game {
+    width: 25%;
+}
 .latest-score {
     height: 26%;
     width: 94%;
     margin: 3% auto;
     background-color: #ffffff;
-    border: 3px #d0d2d4 solid;
+    border: 2px #d0d2d4 solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.current-guess {
+
+.guesses {
+    height: 94%;
+    width: 94%;
+    vertical-align: center;
+    align-items: center;
+
+}
+
+.current-guess1, .current-guess2 {
     height: 85%;
-    width: 45%;
+    width: 94%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+}
+
+.result1 {
+    border-right: 2px #d0d2d4 solid;
+}
+
+
+.player1-name {
+    text-align: center;
+    margin: 0 0 5px 0;
+
+}
+
+.player2-name {
+    text-align: center;
+    margin: 37px 0 5px 0;
+
+}
+
+p {
+    text-align: center;
+    margin: 0;
+}
+
+/*---------------Right Side-------------*/
+
+
+.right {
+    height: 900px;
+    width: 50%;
+    background-color: #6e6e6e;
+    margin: 0;
 }
