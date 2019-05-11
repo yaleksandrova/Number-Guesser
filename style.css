@@ -13,9 +13,7 @@ body {
 .main {
     height: 900px;
     width: 100%;
-    display: inline;
-   /* display: flex;
-    flex-direction: row;*/
+    display: inline-block;
 }
 /*-------------Header-----------*/
 header {
@@ -26,10 +24,11 @@ header {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 700;
     color: #dd1972;
     margin: 0 auto;
+    padding-top: 10px;
 }
 
 span {
@@ -37,17 +36,20 @@ span {
 }
 
 h3 {
-    font-size: 20px;
-    font-weight: 300px;
+    font-size: 22px;
+    font-weight: 300;
     color: #ffffff;
+    margin: 5px auto;
 }
 /*---------------left side--------*/
 .left {
     height: 900px;
     width: 50%;
     margin: 0;
+    padding-top: 1.5%;
     background-color: #f7f7f7;
     border-right: 3px #d0d2d3 solid;
+    display: inline-block;
 }
 
 h5 {
@@ -58,9 +60,9 @@ h5 {
 }
 
 .box1 {
-    height: 15%;
+    height: 16%;
     width: 94%;
-    margin: 3% auto;
+    margin: 0 auto 3% auto;
     font-size: 20px;
     font-weight: 300;
     color: #404041;
@@ -106,7 +108,7 @@ h5 {
 }
 
 .challengers {
-    height: 44%;
+    height: 47%;
     width: 94%;
     margin: auto;
     background-color: #ffffff;
@@ -119,7 +121,7 @@ h6 {
     margin: 11px;
 }
 
-.small-num, .large-num {
+.range-small, .range-large {
     text-decoration: underline;
     font-weight: bold;
 }
@@ -166,10 +168,11 @@ h6 {
 
 .reset-game, .clear-game {
     width: 28%;
+    background-color: #d0d2d4;
 }
 
 .latest-score {
-    height: 26%;
+    height: 30%;
     width: 94%;
     margin: 3% auto;
     background-color: #ffffff;
@@ -180,7 +183,7 @@ h6 {
 }
 
 .guesses {
-    height: 94%;
+    height: 95%;
     width: 94%;
     vertical-align: center;
     align-items: center;
@@ -199,19 +202,34 @@ h6 {
 }
 
 
-.player1-name {
+.update-player1 {
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
     margin: 0 0 5px 0;
 }
 
-.player2-name {
+.update-player2 {
+    font-weight: 700;
     text-align: center;
     margin: 37px 0 5px 0;
 }
 
 p {
+    font-size: 18px;
+    font-weight: 300;
     text-align: center;
     margin: 0;
+}
+
+.player1-guess-output, .player2-guess-output {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.player1-hint, .player2-hint, .hint {
+    font-size: 22px;
+    font-weight: 300;
 }
 
 /*---------------Right Side-------------*/
@@ -222,4 +240,5 @@ p {
     width: 50%;
     background-color: #6e6e6e;
     margin: 0;
+    float: right;
 }

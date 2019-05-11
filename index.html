@@ -26,12 +26,12 @@
                 <h5>Challenger 1</h5>
                 <form class="challenger1">
                     <label class="name">Name<input class="input-large player1-name"type="text"></label>
-                    <label class="guess">Guess<input class="input-small player1-guess"type="text"></label>
+                    <label class="guess">Guess<input class="input-small player1-guess-input"type="text"></label>
                 </form>                
                 <h5>Challenger 2</h5>
                 <form class="challenger2">
                     <label class="player2-name name">Name<input class="input-large" type="text"></label>
-                    <label class="guess">Guess<input class="input-small player2-guess" type="text"></label>
+                    <label class="guess">Guess<input class="input-small player2-guess-input" type="text"></label>
                 </form>
                 <article class="buttons">
                     <button class="submit-guess button">SUBMIT GUESS</button>
@@ -44,18 +44,18 @@
                 <div class="guesses result1">
                     <div class="current-guess1">
                         <h5>Latest Score</h5>
-                        <h6 class="player1-name">Challenger 1 Name</h6>
+                        <h6 class="update-player1">Challenger 1 Name</h6>
                         <p>current guess</p>
-                        <h1 class="player1-guess">97</h1>
-                        <p>that's too high</p>
+                        <h1 class="player1-guess-output">??</h1>
+                        <p class="player1-hint">that's too <span class="hint">????</span></p>
                     </div>
                 </div> 
                 <div class="guesses result2">   
                     <div class="current-guess2">
-                        <h6 class="player2-name">Challenger 2 Name</h6>
+                        <h6 class="update-player2">Challenger 2 Name</h6>
                         <p>current guess</p>
-                        <h1 class="player2-guess">3</h1>
-                        <p>that's too low</p>
+                        <h1 class="player2-guess-output">??</h1>
+                        <p class="player2-hint">that's too <span class="hint">????</span></p>
                     </div> 
                 </div>   
             </article>
