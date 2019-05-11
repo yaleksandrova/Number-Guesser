@@ -2,50 +2,69 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" 
-    rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     </head>
         <body>
             <header>
-            <h1>NUMBER<span>GUESSER</span></h1>
-            <h3>ULTIMATE CHALLENGER EDITION</h3>
-        </header>
-        <section class="left">
-            <form class="set-range">
-                <h5>Set Range</h5>
-                <label id="min-range">Min Range</label>
-                <input type="number">
-                <label id="max-range">Max Range</label>
-                <input type="number">
-                <button id="update">UPDATE</button>
-            </form>
-            <form class="challengers">
-                <p>The Current Range is 1 to 100</p>
+                <h1>NUMBER<span>GUESSER</span></h1>
+                <h3>ULTIMATE CHALLENGER EDITION</h3>
+            </header>
+            <main>
+            <section class="left">
+                
+                <article class="box1">
+                    <h5>Set Range</h5>
+                    <form class="set-range">
+                        <label class="min-range">Min Range<input class="input-small small-num" type="number"></label>
+                        <label class="max-range">Max Range<input class="input-small large-num" type="number"></label>
+                        <button class="update">UPDATE</button>
+                    </form>
+                </article> 
+
+            <section class="challengers">
+                <h6>The Current Range is <span class="range-small">1</span> to <span class="range-large">100</span></h6>
                 <h5>Challenger 1</h5>
-                <label class="name">Name</label>
-                <input type="text">
-                <label class="guess">Guess</label>
-                <input type="number">
+                <form class="challenger1">
+                    <label class="name">Name<input class="input-large player1-name"type="text"></label>
+                    <label class="guess">Guess<input class="input-small player1-guess-input"type="text"></label>
+                </form>                
                 <h5>Challenger 2</h5>
-                <label class="name">Name</label>
-                <input type="text">
-                <label class="guess">Guess</label>
-                <input type="number">
-                <button id="submit-guess">SUBMIT GUESS</button>
-                <button id="reset-game">RESET GAME</button>
-                <button id="clear-game">CLEAR GAME</button>
-            </form>
+                <form class="challenger2">
+                    <label class="player2-name name">Name<input class="input-large" type="text"></label>
+                    <label class="guess">Guess<input class="input-small player2-guess-input" type="text"></label>
+                </form>
+                <article class="buttons">
+                    <button class="submit-guess button">SUBMIT GUESS</button>
+                    <button class="reset-game button">RESET GAME</button>
+                    <button class="clear-game button">CLEAR GAME</button>
+                </article>
+            </section>
+
             <article class="latest-score">
-                <h5>Latest Score</h5>
-                <h6>Challenger 1 Name</h6>
-                <p>current guess</p>
-                <p>that's too high</p>
-                <h6>Challenger 2 Name</h6>
-                <p>current guess</p>
-                <p>that's too low</p>
+                <div class="guesses result1">
+                    <div class="current-guess1">
+                        <h5>Latest Score</h5>
+                        <h6 class="update-player1">Challenger 1 Name</h6>
+                        <p>current guess</p>
+                        <h1 class="player1-guess-output">??</h1>
+                        <p class="player1-hint">that's too <span class="hint">????</span></p>
+                    </div>
+                </div> 
+                <div class="guesses result2">   
+                    <div class="current-guess2">
+                        <h6 class="update-player2">Challenger 2 Name</h6>
+                        <p>current guess</p>
+                        <h1 class="player2-guess-output">??</h1>
+                        <p class="player2-hint">that's too <span class="hint">????</span></p>
+                    </div> 
+                </div>   
             </article>
         </section>
+       
         <section class="right">
+
         </section>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
