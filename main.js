@@ -1,11 +1,11 @@
 // querySelector
-var smallNum=document.querySelector('.small-num');
-var largeNum=document.querySelector('.large-num');
-var update=document.querySelector('.update');
-
-var rangeSmall=document.querySelector('.range-small');
-var rangeLarge=document.querySelector('.range-large');
-
+var smallNum = document.querySelector('.small-num');
+var largeNum  =document.querySelector('.large-num');
+var update = document.querySelector('.update');
+var random = null;
+var rangeSmall = document.querySelector('.range-small');
+var rangeLarge = document.querySelector('.range-large');
+ 
 // eventListeners
 
   update.addEventListener('click', updateRange)
@@ -15,26 +15,19 @@ var rangeLarge=document.querySelector('.range-large');
 
 function updateRange() {
   event.preventDefault();
-  // console.log('user input', smallNum.value);
-  // console.log('user input', largeNum.value);
-
-  // console.log(rangeSmall.innerText);
-  // console.log(rangeLarge.innerText);
-  
-  rangeSmall.innerText = smallNum.value || 1;
-  rangeLarge.innerText = largeNum.value || 100;
+  var min = parseInt(smallNum.value) || 1;
+  var max = parseInt(largeNum.value) || 100;
+  rangeSmall.innerText = min;
+  rangeLarge.innerText = max;
+  random = randomNum(min, max);
+  console.log(random);
 }
 //update min range
 //update max range
 
-function randomNum() {
-  smallNum.value >= math.ceil(1);
-  largeNum.value <= math.floor(100);
-  console.log('min', smallNum.value);
-  console.log('max', largeNum.value);
-
-  
-  return Math.floor(math.random()*(max-min)+ min);
+function randomNum(min, max) {
+  return Math.floor(Math.random()*(max - min)+  min);
 }
+
 
 
