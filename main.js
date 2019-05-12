@@ -72,10 +72,24 @@ submitGuess.addEventListener('click', function() {
   player2GuessOutput.innerText = player2GuessInput.value;
 });
 
+  // Display results and feedback for each players guess: Too High/Low/BOOM //
 
-  // Functions://
+  var submitGuess = document.querySelector('.submit-guess');
+  var p = hint;
 
-  //.textContent=name;//
+  // Event Listeners//
+
+  submitGuess.addEventListener('click', function(){
+  p.innerText="Thats too High!";
+  p.innerText="Thats too Low!";
+  })
+
+// -- for the 2nd player running into a problem that it cant distinguish 
+//between 2 players, have to rename <p> //
+
+
+
+
 
 
 
