@@ -29,35 +29,72 @@ function randomNum(min, max) {
   return Math.floor(Math.random()*(max - min)+  min);
 }
 
-//Update name of the player//
 
-  var player1Name = document.querySelector(".player1-name");
-  var player2Name = document.querySelector(".player2-name");
-  var updatePlayer1= document.querySelector(".update-player1");
-  var updatePlayer2 = document.querySelector(".update-player2");
+var player1Name = document.querySelector('.player1-name');
+var player2Name = document.querySelector('.player2-name');
+var updatePlayer1= document.querySelector('.update-player1');
+var updatePlayer2 = document.querySelector('.update-player2');
+var player1GuessInput = document.querySelector('.player1-guess-input');
+var player2GuessInput = document.querySelector('.player2-guess-input');
+var player1GuessOutput = document.querySelector('.player1-guess-output');
+var player2GuessOutput = document.querySelector('.player2-guess-output');
+var submitGuess = document.querySelector('.submit-guess');
+var resetGame = document.querySelector('.reset-game');
+var clearGame = document.querySelector('.clear-gamne');
+var hint = document.querySelector('.hint');
 
-  var player1GuessInput = document.querySelector(".player1-guess-input");
-  var player2GuessInput = document.querySelector(".player2-guess-input");
+  //Event Listeners//
+  
+  //when submit guess is clicked update player name and guesses
 
-  var player1GuessOutput = document.querySelector(".player1-guess-output");
-  var player2GuessOutput = document.querySelector(".player2-guess-output");
-
-  var submitGuess = document.querySelector(".submit-guess");
-  var resetGame = document.querySelector(".reset-game");
-  var clearGame = document.querySelector(".clear-gamne");
+//update player names//
+  //take user input names and output them to display above guesses
+  //can accept any alpha-numeric character 
 
 
-  //Event Listener//
+submitGuess.addEventListener('click', function() {
+  updatePlayer1.innerText = player1Name.value;
+});
 
-  submitGuess.addEventListener('click', updateNames);
+submitGuess.addEventListener('click', function() {
+  updatePlayer2.innerText = player2Name.value;
+});
 
+//update player guesses
+  //take user guesses and update them to display below coresponding name
+  //can only accept numeric values
+
+submitGuess.addEventListener('click', function() {
+  player1GuessOutput.innerText = player1GuessInput.value;
+});
+
+submitGuess.addEventListener('click', function() {
+  player2GuessOutput.innerText = player2GuessInput.value;
+});
 
 
   // Functions://
 
   //.textContent=name;//
 
-  function updateNames(playerName) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // In html update button//
 

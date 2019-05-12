@@ -26,12 +26,12 @@
                 <h5>Challenger 1</h5>
                 <form class="challenger1">
                     <label class="name">Name<input class="input-large player1-name"type="text"></label>
-                    <label class="guess">Guess<input class="input-small player1-guess-input"type="text"></label>
+                    <label class="guess">Guess<input class="input-small player1-guess-input"type="number"></label>
                 </form>                
                 <h5>Challenger 2</h5>
                 <form class="challenger2">
-                    <label class="player2-name name">Name<input class="input-large" type="text"></label>
-                    <label class="guess">Guess<input class="input-small player2-guess-input" type="text"></label>
+                    <label class="name">Name<input class="input-large player2-name" type="text"></label>
+                    <label class="guess">Guess<input class="input-small player2-guess-input" type="number"></label>
                 </form>
                 <article class="buttons">
                     <button class="submit-guess button">SUBMIT GUESS</button>
@@ -62,8 +62,24 @@
         </section>
        
         <section class="right">
-
+            <article class="results">
+                <div class="vs">
+                    <h6 class="update-player1">Challenger 1 Name</h6>
+                    <p>vs</p>
+                    <h6 class="update-player2">Challenger 2 Name</h6>
+                </div>
+                <div class="winner">
+                    <h4>CHALLENGER NAME</h4>
+                    <p>WINNER</p>
+                </div>
+                <div class="stats">
+                    <p><span class="number-of-guesses">###</span>GUESSES</p>
+                    <p><span class="minutes">###</span>MINUTES</p>
+                    <img src="" alt="grey close button">
+                </div>
+            </article>
         </section>
+
     </main>
     <script type="text/javascript" src="main.js"></script>
     </body>
