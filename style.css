@@ -228,7 +228,7 @@ p {
     font-weight: 700;
 }
 
-.player1-hint, .player2-hint, .hint {
+.hint {
     font-size: 22px;
     font-weight: 300;
 }

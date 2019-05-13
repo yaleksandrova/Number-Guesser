@@ -41,7 +41,7 @@ var player2GuessOutput = document.querySelector('.player2-guess-output');
 var submitGuess = document.querySelector('.submit-guess');
 var resetGame = document.querySelector('.reset-game');
 var clearGame = document.querySelector('.clear-gamne');
-var hint = document.querySelector('.hint');
+
 
   //Event Listeners//
   
@@ -75,14 +75,60 @@ submitGuess.addEventListener('click', function() {
   // Display results and feedback for each players guess: Too High/Low/BOOM //
 
   var submitGuess = document.querySelector('.submit-guess');
-  var p = hint;
+  var hintPlayer1 = document.querySelector('.hint-player1');
+  var hintPlayer2 = document.querySelector('.hint-player2');
+
+///eventlisteners
+
+submitGuess.addEventListener('click', function() {
+  if (player1GuessInput.value < random){
+    hintPlayer1.innerText = "that's too low";
+  } else if (player1GuessInput.value > random) {
+    hintPlayer1.innerText = "that's too high";
+  } else  {
+    hintPlayer1.innerText = "BOOM!";
+  }
+  
+});
+
+
+submitGuess.addEventListener('click', function() {
+    if (player2GuessInput.value < random){
+    hintPlayer2.innerText = "that's too low";
+  } else if (player2GuessInput.value > random) {
+    hintPlayer2.innerText = "that's too high";
+  } else  {
+    hintPlayer2.innerText = "BOOM!";
+  }
+  
+});
+
+
+
+
+//Need function to display hint depending on if each player's
+//guess is < or > to the random number
+//use if/else
+
+
+
+
+
+
+
+
+
+
+
+
+  // var p = hint;
 
   // Event Listeners//
 
-  submitGuess.addEventListener('click', function(){
-  p.innerText="Thats too High!";
-  p.innerText="Thats too Low!";
-  })
+  // submitGuess.addEventListener('click', function(){
+  // p.innerText="Thats too High!";
+  // p.innerText="Thats too Low!";
+  // })
 
 // -- for the 2nd player running into a problem that it cant distinguish 
 //between 2 players, have to rename <p> //
@@ -110,6 +156,3 @@ submitGuess.addEventListener('click', function() {
 
 
 
-// In html update button//
-
-//  <button onclick="updateName" (document.getElementByClass("name").value">name</button>  //
