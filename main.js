@@ -104,34 +104,40 @@ submitGuess.addEventListener('click', function() {
 });
 
 
+var resetGame = document.querySelector('.reset-game');
+var clearGame = document.querySelector('.clear-game');
 
 
-//Need function to display hint depending on if each player's
-//guess is < or > to the random number
-//use if/else
-
-
-
+//Event Listeners
 
 
 
+clearGame.addEventListener('click', function() {
+});
+
+function (clearButton){
+  e.preventDefault(); 
+  player1Name.innerText = "";
+  player2Name.innerText = "";
+  player1GuessInput.innerText = "";
+  player2GuessInput.innerText = "";
+  
+  function (clearButton);
+}
 
 
 
 
 
+resetGame.addEventListener('click', function(){
+  
 
-  // var p = hint;
+});
 
-  // Event Listeners//
 
-  // submitGuess.addEventListener('click', function(){
-  // p.innerText="Thats too High!";
-  // p.innerText="Thats too Low!";
-  // })
 
-// -- for the 2nd player running into a problem that it cant distinguish 
-//between 2 players, have to rename <p> //
+
+
 
 
 
