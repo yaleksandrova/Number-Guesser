@@ -8,7 +8,7 @@ var rangeLarge = document.querySelector('.range-large');
  
 // eventListeners
 
-  update.addEventListener('click', updateRange)
+  update.addEventListener('click', updateRange);
 
 
 // functions
@@ -51,26 +51,19 @@ var clearGame = document.querySelector('.clear-gamne');
   //take user input names and output them to display above guesses
   //can accept any alpha-numeric character 
 
-
-submitGuess.addEventListener('click', function() {
-  updatePlayer1.innerText = player1Name.value;
-});
-
-submitGuess.addEventListener('click', function() {
-  updatePlayer2.innerText = player2Name.value;
-});
-
 //update player guesses
   //take user guesses and update them to display below coresponding name
   //can only accept numeric values
 
-submitGuess.addEventListener('click', function() {
-  player1GuessOutput.innerText = player1GuessInput.value;
-});
 
-submitGuess.addEventListener('click', function() {
+submitGuess.addEventListener('click', submitGuessButton);
+  
+function submitGuessButton() {
+  updatePlayer1.innerText = player1Name.value;
+  updatePlayer2.innerText = player2Name.value;
+  player1GuessOutput.innerText = player1GuessInput.value;
   player2GuessOutput.innerText = player2GuessInput.value;
-});
+};
 
   // Display results and feedback for each players guess: Too High/Low/BOOM //
 
@@ -80,19 +73,22 @@ submitGuess.addEventListener('click', function() {
 
 ///eventlisteners
 
-submitGuess.addEventListener('click', function() {
-  if (player1GuessInput.value < random){
+submitGuess.addEventListener('click', calculateHint1);
+
+
+function calculateHint1() {
+  if (player1GuessInput.value < random ){
     hintPlayer1.innerText = "that's too low";
   } else if (player1GuessInput.value > random) {
     hintPlayer1.innerText = "that's too high";
-  } else  {
+  } else {
     hintPlayer1.innerText = "BOOM!";
   }
-  
-});
+  calculateHint2();
+};
 
 
-submitGuess.addEventListener('click', function() {
+function calculateHint2() {
     if (player2GuessInput.value < random){
     hintPlayer2.innerText = "that's too low";
   } else if (player2GuessInput.value > random) {
@@ -101,7 +97,7 @@ submitGuess.addEventListener('click', function() {
     hintPlayer2.innerText = "BOOM!";
   }
   
-});
+};
 
 
 var resetGame = document.querySelector('.reset-game');
@@ -112,27 +108,44 @@ var clearGame = document.querySelector('.clear-game');
 
 
 
-// clearGame.addEventListener('click', function() {
-// });
+clearGame.addEventListener('click', clearButton);
 
-// function (clearButton){
-//   e.preventDefault(); 
-//   player1Name.innerText = "";
-//   player2Name.innerText = "";
-//   player1GuessInput.innerText = "";
-//   player2GuessInput.innerText = "";
-  
-//   function (clearButton);
-// }
+function clearButton() {
+  event.preventDefault(); 
+  player1Name.value = " ";
+  player2Name.value = " ";
+  player1GuessInput.value = " ";
+  player2GuessInput.value = " ";
+};
+
+resetGame.addEventListener('click', resetButton);
+
+function resetButton() {
+  event.preventDefault();
+  clearButton();
+  updateRange();
+  hintPlayer1.innerText = " ";
+  hintPlayer2.innerText = " ";
+  player1GuessOutput.innerText = "??";
+  player2GuessOutput.innerText = "??";
+  updatePlayer1.innerText = "Challenger 1 Name";
+  updatePlayer2.innerText = "Challenger 2 Name";
+};
+
+smallNum.addEventListener('keyup', enableButtons);
+largeNum.addEventListener('keyup', enableButtons);
+player1Name.addEventListener('keyup', enableButtons);
+player2Name.addEventListener('keyup', enableButtons);
+player1GuessInput.addEventListener('keyup', enableButtons);
+player2GuessInput.addEventListener('keyup', enableButtons);
+
+function enableButtons(){
+ clearGame.disabled = false;
+ resetGame.disabled = false;
+};
 
 
 
-
-
-// resetGame.addEventListener('click', function(){
-  
-
-// });
 
 
 
