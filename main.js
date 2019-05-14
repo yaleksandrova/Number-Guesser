@@ -93,7 +93,7 @@ function calculateHint2() {
     hintPlayer2.innerText = "that's too low";
   } else if (player2GuessInput.value > random) {
     hintPlayer2.innerText = "that's too high";
-  } else  {
+  } else {
     hintPlayer2.innerText = "BOOM!";
   }
   

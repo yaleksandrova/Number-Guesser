@@ -24,6 +24,11 @@ button:hover:enabled {
 button:focus {
     outline: none;
 }
+
+button:disabled,
+button[disabled] {
+    background-color: #d0d2d3;
+}
 /*-------------Header-----------*/
 header {
     height: 150px;
@@ -47,14 +52,16 @@ span {
 h3 {
     font-size: 22px;
     font-weight: 300;
+    text-align: center;
     color: #ffffff;
-    margin: 5px auto;
+    margin: 5px 10px;
 }
 
 h3:after,
 h3:before {
+    content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
     text-decoration: line-through;
-    width: 10%;
+    width: 40%;
     color: #ffffff;
 }
 /*---------------left side--------*/
@@ -260,7 +267,7 @@ p {
 
 .results {
     height: 25%;
-    width: 94%;
+    width: 90%;
     margin: 3% auto;
     background-color: #ffffff;
     border: 2px #6e6e6e solid;
