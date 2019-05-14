@@ -7,7 +7,7 @@
 body {
     height: 1000px;
     width: 100%;
-    color: #404041;
+    color: #6e6e6e;
 }
 
 .main {
@@ -41,6 +41,13 @@ h3 {
     color: #ffffff;
     margin: 5px auto;
 }
+
+h3:after,
+h3:before {
+    text-decoration: line-through;
+    width: 10%;
+    color: #ffffff;
+}
 /*---------------left side--------*/
 .left {
     height: 900px;
@@ -55,7 +62,6 @@ h3 {
 h5 {
     font-size: 20px;
     font-weight: 700;
-    color: #404041;
     margin: 8px 0 1px 11px;
 }
 
@@ -65,7 +71,6 @@ h5 {
     margin: 0 auto 3% auto;
     font-size: 20px;
     font-weight: 300;
-    color: #404041;
     background-color: #ffffff;
     border: 2px #d0d2d4 solid;
 }
@@ -89,7 +94,7 @@ h5 {
 
 .input-small {
     height: 40px;
-    width: 200px;
+    width: 95%;
     border: 2px #d0d2d4 solid;
 }
 
@@ -140,12 +145,11 @@ h6 {
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    color: #404041;
 }
 
 .input-large {
     height: 40px;
-    width: 390px;
+    width: 190%;
     border: 2px #d0d2d4 solid;
 }
 
@@ -205,13 +209,14 @@ h6 {
 
 .update-player1 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     margin: 0 0 5px 0;
 }
 
 .update-player2 {
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
     text-align: center;
     margin: 37px 0 5px 0;
 }
@@ -253,39 +258,59 @@ p {
 }
 
 .vs {
-    height: 15%;
-    width: 96%;
+    font-size: 17px;
+    font-weight: 300;
+    height: 20%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
 
+.result-player1, .result-player2 {
+    font-weight: 700;
+    text-align: center;
 }
 
 .winner {
     height: 60%;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     text-align: center;
-    vertical-align: center;
     border-top: 2px #d0d2d4 solid;
     border-bottom: 2px #d0d2d4 solid;
 }
 
-h4 {
-    font-size: 30px;
+.winner-name {
+    font-size: 40px;
     font-weight: 700;
-    margin: 0 auto;
+    margin: 5px auto;
+}
+
+
+.win {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 5px auto;
 }
 
 .stats {
+    height: 20%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 11px;;
+    align-items: center;
 }
 
-.number-of-guesses, .minutes {
+.number-of-guesses {
+    font-size: 18px;
+    font-weight: 700;
+    /*margin-left: 20px;*/
+} 
+
+.minutes {
     font-size: 18px;
     font-weight: 700;
 }
@@ -293,8 +318,10 @@ h4 {
 .exit-button {
     height: 30px;
     width: 30px;
-    font-size: 28px;
+    /*margin-right: 20px;*/
+    font-size: 20px;
     font-weight: 700;
+    text-align: center;
     color: #d0d2d4;
     background-color: #6e6e6e;
     border-radius: 50%;

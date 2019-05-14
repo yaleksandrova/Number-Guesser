@@ -112,27 +112,27 @@ var clearGame = document.querySelector('.clear-game');
 
 
 
-clearGame.addEventListener('click', function() {
-});
+// clearGame.addEventListener('click', function() {
+// });
 
-function (clearButton){
-  e.preventDefault(); 
-  player1Name.innerText = "";
-  player2Name.innerText = "";
-  player1GuessInput.innerText = "";
-  player2GuessInput.innerText = "";
+// function (clearButton){
+//   e.preventDefault(); 
+//   player1Name.innerText = "";
+//   player2Name.innerText = "";
+//   player1GuessInput.innerText = "";
+//   player2GuessInput.innerText = "";
   
-  function (clearButton);
-}
+//   function (clearButton);
+// }
 
 
 
 
 
-resetGame.addEventListener('click', function(){
+// resetGame.addEventListener('click', function(){
   
 
-});
+// });
 
 
 
