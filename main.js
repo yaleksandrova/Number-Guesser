@@ -40,7 +40,7 @@ var player1GuessOutput = document.querySelector('.player1-guess-output');
 var player2GuessOutput = document.querySelector('.player2-guess-output');
 var submitGuess = document.querySelector('.submit-guess');
 var resetGame = document.querySelector('.reset-game');
-var clearGame = document.querySelector('.clear-gamne');
+var clearGame = document.querySelector('.clear-game');
 
 
   //Event Listeners//
@@ -132,17 +132,33 @@ function resetButton() {
   updatePlayer2.innerText = "Challenger 2 Name";
 };
 
-smallNum.addEventListener('keyup', enableButtons);
-largeNum.addEventListener('keyup', enableButtons);
+// smallNum.addEventListener('keyup', enableButtons);
+// largeNum.addEventListener('keyup', enableButtons);
 player1Name.addEventListener('keyup', enableButtons);
 player2Name.addEventListener('keyup', enableButtons);
 player1GuessInput.addEventListener('keyup', enableButtons);
 player2GuessInput.addEventListener('keyup', enableButtons);
 
 function enableButtons(){
- clearGame.disabled = false;
- resetGame.disabled = false;
+  var inputs = [
+  player1Name.value,
+  player2Name.value,
+  player1GuessInput.value,
+  player2GuessInput.value];
+
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i] === ""){
+      clearGame.disabled = true;
+      resetGame.disabled = true;
+      return;
+      } else {
+      clearGame.disabled = false;
+      resetGame.disabled = false;
+    }
+  } 
 };
+
+
 
 
 
