@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    /*border: chartreuse 1px solid;*/
     font-family: 'Open Sans', sans-serif;
 }
 /*-------------Body------------*/
@@ -17,8 +16,8 @@ body {
 }
 
 button:hover:enabled {
-    background-color: #dd1972;
     color: #ffffff;
+    background-color: #dd1972;
 }
 
 button:focus {
@@ -33,14 +32,14 @@ button[disabled] {
 header {
     height: 150px;
     width: 100%;
-    background-color: #404041;
     text-align: center;
+    background-color: #404041;
 }
 
 h1 {
+    color: #dd1972;
     font-size: 65px;
     font-weight: 700;
-    color: #dd1972;
     margin: 0 auto;
     padding-top: 10px;
 }
@@ -50,19 +49,18 @@ span {
 }
 
 h3 {
+    color: #ffffff;
     font-size: 22px;
     font-weight: 300;
     text-align: center;
-    color: #ffffff;
     margin: 5px 10px;
 }
 
 h3:after,
 h3:before {
+    color: #ffffff;
     content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
     text-decoration: line-through;
-    width: 40%;
-    color: #ffffff;
 }
 /*---------------left side--------*/
 .left {
@@ -84,9 +82,9 @@ h5 {
 .box1 {
     height: 16%;
     width: 94%;
-    margin: 0 auto 3% auto;
     font-size: 20px;
     font-weight: 300;
+    margin: 0 auto 3% auto;
     background-color: #ffffff;
     border: 2px #d0d2d4 solid;
 }
@@ -102,10 +100,10 @@ h5 {
 
 .min-range, .max-range{
     width: 33%;
+    color: #404041;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
-    font-size: 20px;
-    color: #404041;
 }
 
 .input-small {
@@ -117,9 +115,9 @@ h5 {
 .update {
     height: 40px;
     width: 20%;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 700;
-    color: #ffffff;
     background-color: #6e6e6e;
     border-radius: 25px;
     display: flex;
@@ -149,18 +147,18 @@ h6 {
 
 .challenger1, .challenger2 {
     width: 97%;
+    margin: 14px 0px 35px 11px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 14px 0px 35px 11px;
 }
 
 .name, .guess {
     width: 33%;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
-    font-size: 20px;
 }
 
 .input-large {
@@ -180,9 +178,9 @@ h6 {
 .button {
     height: 40px;
     width: 33%;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 700;
-    color: #ffffff;
     background-color: #6e6e6e;
     border-radius: 25px;
 }
@@ -260,8 +258,8 @@ p {
 .right {
     height: 900px;
     width: 50%;
-    background-color: #D1D2D4;
     margin: 0;
+    background-color: #D1D2D4;
     float: right;
 }
 
@@ -274,10 +272,10 @@ p {
 }
 
 .vs {
-    font-size: 17px;
-    font-weight: 300;
     height: 20%;
     width: 95%;
+    font-size: 17px;
+    font-weight: 300;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -323,7 +321,6 @@ p {
 .number-of-guesses {
     font-size: 18px;
     font-weight: 700;
-    /*margin-left: 20px;*/
 } 
 
 .minutes {
@@ -334,11 +331,10 @@ p {
 .exit-button {
     height: 30px;
     width: 30px;
-    /*margin-right: 20px;*/
+    color: #d0d2d4;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
-    color: #d0d2d4;
     background-color: #6e6e6e;
     border-radius: 50%;
 }
